@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Images, Tables & Lists</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.unsplash.com/photo-1600716051809-e997e11a5d52?q=80&w=2050&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="lemon/orange & knife"
+      width="500"
+    />
+
+    <h2>HTML Lists</h2>
+    <h3>Unordered Lists</h3>
+    <ul type="square">
+      <li>Ajay</li>
+      <li>Ram</li>
+      <li>Maruti</li>
+      <li>Radhika</li>
+    </ul>
+
+    <h3>Ordered Lists</h3>
+    <ol type="A">
+      <li>10th</li>
+      <li>12th</li>
+      <li>UG</li>
+      <li>PG</li>
+    </ol>
+
+    <h3>Description Lists</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language - Skeleton/Structure.</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets - Styling/Beautify/Make up.</dd>
+      <dt>JS</dt>
+      <dd>JavaScript - Programming Language.</dd>
+    </dl>
+
+    <h2>Tables</h2>
+    <table>
+      <caption>
+        My Table
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Designation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ajay</td>
+          <td rowspan="2">21</td>
+          <td>Programmer</td>
+        </tr>
+        <tr>
+          <td>Radhika</td>
+          <td>HR</td>
+        </tr>
+        <tr>
+          <td>Madhav</td>
+          <td>35</td>
+          <td>Administrator</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
