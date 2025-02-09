@@ -1,0 +1,44 @@
+<!-- 
+    3 Ways to Add CSS in HTML
+      - Inline CSS – Add styles directly in the style attribute of an element.
+      - Internal CSS – Define styles inside a <style> tag within the <head>.
+      - External CSS – Link an external .css file using <link> in the <head>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways to link CSS in Html</title>
+    <style>
+      #internal {
+        background-color: rgb(255, 149, 0);
+        color: white;
+        list-style-position: inside;
+        font-family: sans-serif;
+        padding: 10px;
+        border: 2px solid black;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Ways to link CSS in HTML</h1>
+    <ol>
+      <li
+        style="
+          background-color: steelblue;
+          color: white;
+          list-style-position: inside;
+          font-family: sans-serif;
+          padding: 10px;
+        "
+      >
+        Inline CSS
+      </li>
+      <li id="internal">Internal CSS</li>
+      <li id="external">External CSS</li>
+    </ol>
+  </body>
+</html>
