@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Universal Selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Element Selector */
+      body {
+        font-family: sans-serif;
+        color: #ffffff;
+        background-color: #1c1c1c;
+      }
+
+      /* Class Selector */
+      .sec-fav {
+        background-color: #079df3;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: end;
+      }
+
+      /* Id Selector */
+      #mera-fav {
+        background-color: chocolate;
+      }
+
+      /* Grouping Selector */
+      h1,
+      p,
+      span {
+        color: yellow;
+      }
+
+      /* Descendant Selector */
+      div p {
+        background-color: #11ff21;
+        color: black;
+        text-align: center;
+        font-weight: bolder;
+        padding: 5px;
+        border: 5px solid orange;
+        margin: 1px;
+      }
+
+      /* Child Selector */
+      div > p {
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        font-weight: bolder;
+        padding: 5px;
+      }
+
+      /* Pseudo Selector */
+      a:hover {
+        background-color: orange;
+      }
+
+      a:link {
+        color: rgb(208, 0, 255);
+      }
+
+      a:visited {
+        color: rgb(255, 0, 0);
+      }
+
+      a:focus {
+        color: brown;
+        background-color: thistle;
+      }
+
+      li:first-child {
+        background-color: red;
+      }
+
+      li:last-child {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I am a h1 heading</h1>
+    <p>Hi i am a para</p>
+    <span>Main ek span hoon.</span>
+    <div>I am a divi</div>
+    <ul>
+      <li class="sec-fav">Paneer Butter Masala</li>
+      <li id="mera-fav">Palak Paneer</li>
+      <li class="sec-fav">Paneer Bhurji</li>
+      <li><a href="https://youtube.com">Kahi Nahi</a></li>
+      <li>Kadhai Paneer</li>
+    </ul>
+
+    <div>
+      <p>Hi i am a para inside divi</p>
+
+      <section>
+        <p>Hi i am a para inside section</p>
+      </section>
+    </div>
+  </body>
+</html>
