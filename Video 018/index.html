@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      div {
+        margin-block: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div>
+        <h2>CSS Box Model</h2>
+        <img
+          src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/css-box-model/box%20model.png"
+          alt="CSS Box Model"
+          width="400"
+        />
+      </div>
+
+      <div>
+        <h2>CSS Margin Collapse</h2>
+        <img
+          src="https://miro.medium.com/v2/resize:fit:421/0*kAD00byJs8jdmXvr.png"
+          alt="Margin Collapse"
+        />
+      </div>
+    </center>
+
+    <!-- 
+    Everything in CSS has a box around it, and understanding these boxes is key to being able to create more complex layouts with CSS, or to align items with other items. 
+
+    The CSS Box model defines how elements are rendered and how their dimensions are calculated.
+
+    It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.
+
+    The box model consists of four main components, which are:-
+     Content - The content of the box, where text and images appear
+     Padding - Clears an area around the content. The padding is transparent
+     Border - A border that goes around the padding and content
+     Margin - Clears an area outside the border. The margin is transparent
+
+
+     
+    Margin Collapse
+     Sometimes two margins collapse into a single margin.
+     Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+     This does not happen on left and right margins! Only top and bottom margins!
+    -->
+  </body>
+</html>
