@@ -1,0 +1,51 @@
+<!-- 
+ The Cascade Algorithm:
+        CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element.
+        Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+            - Position and order of appearance: the order in which your CSS rules appear
+            - Specificity: an algorithm that determines which CSS selector has the strongest match
+            - Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+            - Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+        
+        The order of specificity is:
+        Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity & Cascade</title>
+    <style>
+      #sample {
+        background-color: steelblue;
+      }
+
+      .one {
+        background-color: red !important;
+      }
+
+      .two {
+        background-color: yellow !important;
+      }
+
+      [data-demo="kuch-bhi"] {
+        background-color: maroon;
+      }
+
+      .three {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sample"
+      class="one two three"
+      data-demo="kuch-bhi"
+      style="background-color: rgb(96, 229, 252)"
+    >
+      Jai Shree Ram
+    </div>
+  </body>
+</html>
