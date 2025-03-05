@@ -1,0 +1,60 @@
+<!-- 
+vmax represents the width on a laptop and the height on a phone, while vmin represents the height on a laptop and the width on a phone. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sizing Units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+      }
+
+      #container {
+        background-color: steelblue;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        /* height: 50vh; */
+        min-height: 50vh;
+        overflow-y: auto;
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+        repellat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+        repellat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+        repellat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+        repellat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+        repellat.
+      </p>
+    </div>
+  </body>
+</html>
